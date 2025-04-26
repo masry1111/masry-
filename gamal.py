@@ -54,7 +54,7 @@ class ElGamal:
             x1 += m0 #make sure the answer is positive
         return x1
 
-    #encrypting message using public key
+     #encrypting message using public key
     def encrypt(self, message):
         if not isinstance(message, int) or message<0:
             raise ValueError("please enter a positive integer: ")
